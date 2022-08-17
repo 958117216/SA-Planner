@@ -1,0 +1,3 @@
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find manage_module)/config/SA_Planner.rviz" required="true" />
+</launch>

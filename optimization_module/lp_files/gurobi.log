@@ -1,0 +1,1222 @@
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Sat Jul 23 11:49:05 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 81 rows, 18 columns, 623 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 81 rows, 18 columns and 623 nonzeros
+Model fingerprint: 0x3bcb8848
+Model has 54 quadratic objective terms
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [2e-06, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [6e-03, 4e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-02, 2e+01]
+  QRHS range       [1e+01, 1e+01]
+Presolve removed 36 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 68 rows, 78 columns, 445 nonzeros
+Presolved model has 2 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 18
+ AA' NZ     : 1.512e+03
+ Factor NZ  : 1.779e+03
+ Factor Ops : 5.575e+04 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -8.79033935e+03 -8.79808928e+03  1.62e+03 5.84e+01  1.22e+02     0s
+   1  -3.64941892e+04 -8.57562759e+03  1.61e+03 5.68e+01  1.44e+02     0s
+   2  -1.12433982e+05 -6.68825046e+03  1.51e+03 4.19e+01  9.82e+02     0s
+   3  -2.52954579e+05 -5.12594101e+03  1.49e+03 3.39e+01  6.51e+02     0s
+   4  -1.42542558e+05 -1.91851843e+03  7.75e+02 5.00e-02  4.26e+03     0s
+   5  -4.32261865e+03 -1.84390846e+03  1.69e+01 1.29e-03  1.09e+02     0s
+   6  -1.08688229e+03 -2.75446081e+02  2.37e+00 2.21e-05  8.62e+00     0s
+   7  -4.95633189e+02 -1.52909769e+02  6.72e-01 1.01e-05  2.46e+00     0s
+   8  -3.14506846e+02 -6.63175474e+01  3.83e-01 4.58e-06  1.62e+00     0s
+   9  -2.15946445e+02  4.85858812e+01  3.41e-01 8.99e-06  1.10e+00     0s
+  10  -1.60009866e+02  1.08349934e+02  3.69e-01 6.18e-06  8.15e-01     0s
+  11  -3.89146660e+01  1.97081268e+02  2.22e-01 3.69e-06  3.42e-01     0s
+  12   9.20642615e+01  3.34846340e+02  1.49e-01 5.79e-06  1.10e+00     0s
+  13   1.22319175e+02  4.76868941e+02  1.34e-01 5.73e-06  1.98e+00     0s
+  14   5.18784187e+02  8.33361606e+02  1.09e-01 8.59e-06  6.59e+00     0s
+  15   5.50614974e+02  1.43445108e+03  9.93e-02 1.37e-05  8.26e+00     0s
+  16   5.53746826e+02  4.53200767e+03  9.78e-02 9.34e-06  1.14e+01     0s
+  17   5.25989726e+02  3.96786485e+05  9.06e-02 3.22e-06  8.73e+01     0s
+  18   5.24248868e+02  4.65086483e+08  9.00e-02 2.90e-06  5.23e+04     0s
+  19   5.40816044e+02  2.43864654e+09  7.01e-01 1.79e-06  4.66e+06     0s
+  20  -8.78426476e+03 -7.63547273e+04  4.84e+03 1.00e+03  3.43e+06     0s
+  21  -5.34965494e+03 -2.19071664e+04  1.70e+02 3.52e+01  3.27e+04     0s
+  22  -4.30580591e+03 -7.06942923e+03  3.17e+01 6.10e+00  1.96e+03     0s
+  23  -3.25507645e+03 -4.10803011e+03  1.15e+01 2.02e+00  3.92e+02     0s
+  24  -2.47495862e+03 -2.61789021e+03  5.82e+00 8.32e-01  1.46e+02     0s
+  25  -1.63316167e+03 -1.58579243e+03  2.28e+00 1.75e-01  3.33e+01     0s
+  26  -1.01515473e+03 -9.06922280e+02  1.13e+00 8.51e-02  1.84e+01     0s
+  27  -2.95050871e+02 -1.85024373e+02  5.13e-01 1.47e-02  4.08e+00     0s
+  28  -5.67742818e+01  2.26659414e+01  1.57e-01 4.11e-03  2.84e+00     0s
+  29   6.57209667e+01  2.11172766e+02  9.03e-02 7.52e-05  1.44e+00     0s
+  30   1.07152439e+02  3.30708207e+02  9.18e-02 4.18e-04  4.88e+00     0s
+  31   2.84521475e+02  9.32043353e+02  7.18e-02 8.55e-04  2.66e+01     0s
+  32   3.76989226e+03  3.87963428e+04  8.96e-02 5.92e-02  1.27e+04     0s
+  33   6.36314137e+04  2.74392345e+06  8.90e-02 4.59e-02  3.07e+06     0s
+  34*  4.04258016e+06  1.07957469e+07  8.44e-04 4.63e-05  1.51e+01     0s
+  35*  6.97878908e+06  1.49815967e+07  5.87e-04 3.05e-05  1.08e+01     0s
+  36*  1.04498187e+07  1.78417938e+07  4.09e-04 1.82e-05  5.85e+00     0s
+  37*  3.05640032e+07  3.27404658e+07  2.24e-04 2.63e-05  1.27e+00     0s
+  38*  4.99724888e+07  5.60597799e+07  1.59e-04 1.46e-04  1.72e-01     0s
+  39*  5.75687519e+07  2.73546322e+07  6.08e-05 2.15e-04  2.97e-02     0s
+  40*  5.41547738e+06  7.00063395e+06  2.42e-05 7.17e-05  1.13e-02     0s
+  41*  6.26105922e+06  1.03891750e+07  2.92e-05 5.20e-05  1.07e-02     0s
+  42*  2.56005942e+08  9.62030840e+07  1.23e-05 3.90e-06  1.29e-03     0s
+  43*  6.91413945e+08  2.21228557e+09  7.91e-06 1.28e-06  1.03e-03     0s
+  44*  9.09919607e+08  1.23804241e+10  6.60e-06 2.41e-05  7.45e-03     0s
+  45*  1.24704323e+09  1.13484493e+10  2.09e-05 3.36e-05  6.83e-03     0s
+  46*  7.84106130e+10  1.37674137e+11  1.05e-05 8.51e-04  1.45e-04     0s
+  47*  6.61988732e+12  8.75134736e+12  1.87e-07 8.22e-02  1.85e-06     0s
+  48*  5.57927491e+14  7.46909574e+14  4.99e-09 1.56e+00  2.40e-08     0s
+  49*  1.05041100e+16  2.49249208e+15  1.13e-08 1.89e+01  8.81e-10     0s
+  50*  5.10702169e+18  4.27919780e+16  3.12e-08 1.42e+01  2.29e-13     0s
+  51*  4.84693482e+18  1.76048286e+18  2.01e-08 9.38e+01  2.71e-12     0s
+
+Barrier performed 51 iterations in 0.01 seconds
+Numerical trouble encountered
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Sat Jul 23 11:52:52 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 81 rows, 18 columns, 623 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 81 rows, 18 columns and 623 nonzeros
+Model fingerprint: 0x6ecba6ae
+Model has 54 quadratic objective terms
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [2e-06, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [6e-03, 4e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-02, 2e+01]
+  QRHS range       [2e+01, 2e+01]
+Presolve removed 36 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 68 rows, 78 columns, 445 nonzeros
+Presolved model has 2 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 18
+ AA' NZ     : 1.512e+03
+ Factor NZ  : 1.779e+03
+ Factor Ops : 5.575e+04 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -8.79033935e+03 -8.79808928e+03  1.62e+03 5.84e+01  1.22e+02     0s
+   1  -3.64945546e+04 -8.57568853e+03  1.61e+03 5.68e+01  1.44e+02     0s
+   2  -1.12418579e+05 -6.68829951e+03  1.50e+03 4.19e+01  9.83e+02     0s
+   3  -2.52946951e+05 -5.12631867e+03  1.49e+03 3.39e+01  6.51e+02     0s
+   4  -1.41585427e+05 -1.93019149e+03  7.71e+02 5.03e-02  4.24e+03     0s
+   5  -4.29045827e+03 -1.85459186e+03  1.67e+01 1.28e-03  1.08e+02     0s
+   6  -1.08825862e+03 -2.75714246e+02  2.37e+00 2.16e-05  8.66e+00     0s
+   7  -4.74373528e+02 -1.62250307e+02  6.33e-01 1.01e-05  2.28e+00     0s
+   8  -3.60377785e+02 -7.23457122e+01  3.96e-01 4.86e-06  1.33e+00     0s
+   9  -2.21130535e+02 -4.78845006e+01  3.48e-01 7.50e-06  1.11e+00     0s
+  10  -1.84279590e+02  1.15497421e+02  3.85e-01 6.87e-06  9.22e-01     0s
+  11  -3.33073564e+01  2.23300623e+02  2.21e-01 4.23e-06  5.05e-01     0s
+  12   5.14778747e+01  2.84844284e+02  1.57e-01 5.06e-06  4.91e-01     0s
+  13   8.92674791e+01  3.86125050e+02  1.32e-01 6.84e-06  8.09e-01     0s
+  14   1.27368395e+02  3.28265202e+02  1.25e-01 5.79e-06  1.06e+00     0s
+  15   2.72373678e+02  9.48272962e+02  9.48e-02 5.61e-06  9.21e-01     0s
+  16   2.95780574e+02  1.06538122e+03  9.02e-02 1.30e-05  3.81e+00     0s
+  17   2.98843336e+02  1.40708584e+04  8.97e-02 1.01e-05  4.73e+00     0s
+  18   2.99517528e+02  3.80681805e+07  8.92e-02 2.76e-06  5.56e+02     0s
+  19   2.60632956e+02  2.84003172e+09  4.64e-01 1.84e-06  1.21e+07     0s
+  20  -8.79080456e+03 -7.63547273e+04  4.70e+03 1.00e+03  3.33e+06     0s
+  21  -5.23079686e+03 -2.25083977e+04  1.75e+02 3.71e+01  3.41e+04     0s
+  22  -4.19146608e+03 -7.05161934e+03  1.45e+01 8.72e-02  6.16e+02     0s
+  23  -1.54698238e+03 -3.96695804e+03  2.27e+00 3.34e-02  8.77e+01     0s
+  24  -7.68685732e+02 -2.23882786e+03  1.11e+00 1.41e-02  3.73e+01     0s
+  25  -7.29821815e+02 -8.46887871e+02  8.15e-01 2.85e-03  1.42e+01     0s
+  26  -3.39466842e+02 -3.10623816e+02  5.37e-01 9.71e-04  6.19e+00     0s
+  27  -1.00724135e+01  1.15637873e+02  1.92e-01 8.09e-05  1.99e+00     0s
+  28   1.23970083e+02  3.47327099e+02  1.12e-01 2.73e-04  3.41e+00     0s
+  29   3.69985706e+02  7.28716156e+02  7.52e-02 2.24e-04  5.41e+00     0s
+  30   9.26165235e+02  1.14004178e+03  1.66e-01 3.81e-04  3.73e+01     0s
+  31   2.13122800e+03  3.36063232e+03  8.63e-02 2.05e-04  3.85e+01     0s
+  32   4.92208257e+04  3.99080972e+05  8.10e-02 2.84e-02  4.07e+03     0s
+  33*  9.85912508e+05  1.81542991e+07  3.09e-03 1.05e-03  6.87e+00     0s
+  34*  8.56004746e+07  8.96006518e+07  1.36e-04 9.98e-06  1.55e-01     0s
+  35*  5.93628816e+10  4.41177552e+10  1.43e-05 3.27e-04  1.58e-04     0s
+  36*  7.21360433e+10  5.33587610e+10  1.66e-05 5.33e-03  1.39e-04     0s
+  37*  2.22537329e+13  4.50495448e+13  2.98e-06 9.06e-02  4.52e-07     0s
+  38*  4.23339363e+15  3.01906226e+15  1.74e-06 3.57e+01  1.90e-09     0s
+  39*  1.22566201e+17  3.41725164e+17  1.54e-06 4.10e+04  2.88e-10     0s
+  40*  4.03223499e+17  8.73296110e+17  7.74e-06 2.36e+03  5.15e-10     0s
+  41*  7.10661740e+17  1.16042813e+18  5.28e-06 2.19e+03  3.66e-10     0s
+  42*  2.00704987e+19  2.11618482e+19  8.43e-07 8.89e+02  1.62e-11     0s
+  43*  8.54646827e+19  5.42308490e+19  1.88e-07 1.05e+04  3.60e-12     0s
+  44*  1.52816476e+20  1.19259573e+20  8.95e-08 6.98e+03  4.86e-12     0s
+  45*  2.79009320e+20  2.51943971e+20  4.82e-08 4.79e+03  4.27e-12     0s
+  46*  6.06649736e+20  4.84680599e+21  6.86e-08 1.66e+05  1.23e-11     0s
+  47*  2.47123732e+20  1.94180973e+21  1.32e-07 1.65e+05  2.01e-11     0s
+  48*  1.50334202e+22  8.88733289e+22  4.66e-07 1.10e+05  1.26e-12     0s
+  49*  2.55375118e+22  5.33792398e+22  3.37e-07 1.23e+05  1.44e-12     0s
+  50*  4.66822747e+22  7.79331415e+22  2.34e-07 8.82e+04  1.22e-11     0s
+  51*  8.74832319e+22  1.51475056e+23  1.68e-07 1.08e+05  7.56e-12     0s
+
+Barrier performed 51 iterations in 0.01 seconds
+Numerical trouble encountered
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:10:56 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.01 seconds
+: 177 rows, 21 columns, 1545 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 177 rows, 21 columns and 1545 nonzeros
+Model fingerprint: 0x9612e345
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e-07, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e+01, 3e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-02, 8e+00]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.02s
+Presolved: 147 rows, 112 columns, 1249 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 8.442e+03
+ Factor NZ  : 9.510e+03
+ Factor Ops : 7.978e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.22602318e+03  1.21146199e+03  1.41e+02 7.59e+01  1.15e+01     0s
+   1  -4.12036052e+03  1.20475931e+03  1.41e+02 7.43e+01  1.07e+01     0s
+   2   1.09033040e+03  1.13476612e+03  1.35e+02 6.15e+01  4.61e+01     0s
+   3  -2.54064764e+04  1.03808822e+03  1.44e+02 5.04e+01  4.54e+01     0s
+   4  -3.50482880e+04  9.65807974e+02  1.56e+02 4.63e+01  4.19e+01     0s
+   5  -2.43779107e+04 -1.06013561e+03  9.53e+01 3.79e-03  9.01e+01     0s
+   6  -1.88748499e+03 -9.51928436e+02  4.96e+00 2.68e-04  5.79e+00     0s
+   7  -5.63565896e+02 -3.59530620e+02  1.46e+00 1.49e-05  2.27e+00     0s
+   8  -4.81466718e+02 -3.17478604e+01  1.21e+00 5.24e-06  9.38e-01     0s
+   9   1.16703479e+02 -9.70282849e+00  1.35e-01 4.93e-06  1.10e+00     0s
+  10   1.02993715e+02  3.00053200e+01  1.01e-01 2.83e-06  7.12e-01     0s
+  11   9.19919524e+01  6.61986441e+01  7.29e-02 2.55e-06  4.58e-01     0s
+  12   9.04949818e+01  2.05902863e+02  6.52e-02 2.20e-06  4.46e-01     0s
+  13   9.03826980e+01  8.92408460e+04  6.43e-02 1.23e-06  1.24e+00     0s
+  14   7.27858991e+01  9.12886125e+03  2.99e-02 1.24e-06  4.10e+00     0s
+  15   7.48657927e+01  1.02465510e+05  2.84e-02 1.01e-06  4.75e+00     0s
+  16   7.35755917e+01  2.21408375e+06  2.83e-02 9.28e-07  1.02e+01     0s
+  17   6.56121779e+01  2.25664108e+05  2.89e-02 6.78e-07  1.87e+01     0s
+  18   6.53532461e+01  2.42807607e+06  2.85e-02 6.10e-07  2.06e+01     0s
+  19   6.64513727e+01  1.31566260e+05  3.12e-02 1.96e-07  3.50e+00     0s
+  20   6.68189450e+01  8.93412587e+05  2.95e-02 1.86e-07  2.02e+02     0s
+  21   6.72623376e+01  1.75922194e+06  2.89e-02 1.81e-07  2.19e+02     0s
+  22   6.59802619e+01  6.92839005e+05  2.43e-02 1.36e-07  2.51e+02     0s
+  23   6.77082157e+01  1.61549180e+06  2.36e-02 1.36e-07  3.22e+02     0s
+  24   6.67763360e+01  8.27431056e+05  2.19e-02 1.01e-07  2.67e+02     0s
+  25   6.80949494e+01  2.15163848e+06  2.16e-02 9.53e-08  3.82e+02     0s
+  26   8.64930910e+01  9.29574019e+06  2.04e-02 1.11e-07  3.07e+02     0s
+  27   8.59130790e+01  7.08017384e+06  3.14e-02 7.66e-07  2.13e+02     0s
+  28   1.07265007e+02  9.61308617e+04  5.48e-02 3.48e-07  7.72e+00     0s
+  29   1.03363918e+02  5.92467324e+06  5.45e-02 2.55e-07  3.01e+01     0s
+  30   6.90058196e+01  1.58881471e+06  3.48e-02 2.74e-07  1.10e+01     0s
+  31   7.08614079e+01  1.60255326e+05  3.69e-02 2.52e-07  1.20e+01     0s
+  32   7.08240268e+01  1.40792220e+06  3.64e-02 2.36e-07  1.06e+01     0s
+  33   8.52174698e+01  1.66672885e+05  4.21e-02 3.57e-07  1.37e+01     0s
+  34   8.51842210e+01  1.49272051e+06  4.16e-02 3.30e-07  1.24e+01     0s
+  35   8.00679996e+01  1.13808120e+06  3.32e-02 5.14e-07  1.25e+01     0s
+  36   7.78684999e+01  1.15390128e+05  2.91e-02 6.10e-07  2.90e+00     0s
+  37   7.57644184e+01  1.16343031e+04  2.40e-02 5.97e-07  2.02e+00     0s
+  38   7.58792311e+01  5.15676169e+04  2.34e-02 5.44e-07  1.17e+00     0s
+  39   7.54846477e+01  4.88456549e+05  2.34e-02 5.41e-07  1.15e+00     0s
+  40   7.53615869e+01  4.94681120e+04  2.31e-02 7.17e-07  5.69e-01     0s
+  41   7.20940624e+01  4.99515421e+03  2.66e-02 7.10e-07  4.11e+00     0s
+  42   7.31866930e+01  1.03495343e+05  2.48e-02 2.99e-07  8.00e+00     0s
+  43   6.68266983e+01  1.03533761e+05  1.22e-01 2.28e-07  9.78e-02     0s
+  44   6.68759117e+01  1.05094619e+04  7.77e-02 2.21e-07  3.56e-01     0s
+  45   6.69155576e+01  1.74862728e+06  7.73e-02 2.10e-07  4.74e+00     0s
+  46   7.47906103e+01  1.76504713e+05  4.15e-02 1.47e-07  1.90e+00     0s
+  47   7.00600774e+01  1.78771135e+04  3.11e-02 1.56e-07  3.23e+00     0s
+  48   7.03011482e+01  3.65633277e+05  3.02e-02 1.04e-07  1.36e+01     0s
+  49   6.81116783e+01  3.94090693e+04  4.19e-02 1.10e-07  6.85e+01     0s
+  50   6.99283221e+01  5.26560546e+04  3.53e-02 1.04e-07  3.49e+01     0s
+  51   7.05177315e+01  2.56175996e+05  3.36e-02 1.15e-07  9.33e+01     0s
+  52   7.09505725e+01  6.09935940e+05  3.16e-02 1.09e-07  2.40e+01     0s
+  53   6.95342549e+01  6.16222992e+04  3.01e-02 8.40e-08  4.69e+00     0s
+  54   6.97329949e+01  1.38152455e+06  2.98e-02 6.70e-08  2.25e+01     0s
+  55   7.05892193e+01  1.39477569e+05  4.31e-02 9.76e-08  1.53e+01     0s
+  56   7.04796319e+01  3.11403799e+05  4.22e-02 9.59e-08  3.49e+00     0s
+  57   7.38887986e+01  3.15035135e+04  4.80e-02 1.13e-07  5.10e+00     0s
+  58   7.42053829e+01  1.69728692e+05  4.66e-02 1.00e-07  2.81e+00     0s
+  59   7.31551778e+01  1.72108293e+04  4.72e-02 1.21e-07  1.09e+00     0s
+  60   7.32321271e+01  1.50990910e+07  4.67e-02 2.38e-07  2.58e+02     0s
+  61   7.43763611e+01  1.42717092e+07  4.53e-02 2.10e-07  2.06e+02     0s
+  62   1.00793044e+02  8.90360586e+06  3.96e-02 3.81e-07  2.61e+01     0s
+  63   7.02932822e+01  1.78202768e+06  3.57e-02 4.69e-07  3.85e+00     0s
+  64   1.04617256e+02  6.25178386e+06  6.11e-02 3.73e-07  4.91e+02     0s
+  65   8.24337361e+01  1.11846461e+06  4.24e-02 1.84e-07  6.21e+01     0s
+  66   7.72774803e+01  1.12511728e+05  5.38e-02 1.56e-07  2.10e+02     0s
+  67   7.97726739e+01  4.63785043e+05  4.17e-02 4.61e-07  8.80e+01     0s
+  68   7.84016198e+01  3.96986549e+06  4.03e-02 3.91e-07  7.60e+01     0s
+  69   6.88946781e+01  2.24056437e+05  4.65e-02 1.19e-07  1.27e+01     0s
+  70   6.52202202e+01  2.26164306e+04  3.87e-02 1.02e-07  6.57e+00     0s
+  71   6.61123423e+01  1.55686964e+06  3.70e-02 2.09e-07  4.24e+01     0s
+  72   7.14724170e+01  1.57151828e+05  7.07e-02 1.44e-07  3.82e+01     0s
+  73   7.20126486e+01  8.35601551e+05  6.78e-02 1.24e-07  2.07e+01     0s
+
+Barrier performed 73 iterations in 0.07 seconds
+Numerical trouble encountered
+
+Model may be infeasible or unbounded.  Consider using the
+homogeneous algorithm (through parameter 'BarHomogeneous')
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:15:30 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 177 rows, 21 columns, 1545 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 177 rows, 21 columns and 1545 nonzeros
+Model fingerprint: 0x9612e345
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e-07, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e+01, 3e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-02, 8e+00]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 147 rows, 112 columns, 1249 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 8.442e+03
+ Factor NZ  : 9.510e+03
+ Factor Ops : 7.978e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.22602318e+03  1.21146199e+03  1.41e+02 7.59e+01  1.15e+01     0s
+   1  -4.12036052e+03  1.20475931e+03  1.41e+02 7.43e+01  1.07e+01     0s
+   2   1.09033040e+03  1.13476612e+03  1.35e+02 6.15e+01  4.61e+01     0s
+   3  -2.54064764e+04  1.03808822e+03  1.44e+02 5.04e+01  4.54e+01     0s
+   4  -3.50482880e+04  9.65807974e+02  1.56e+02 4.63e+01  4.19e+01     0s
+   5  -2.43779107e+04 -1.06013561e+03  9.53e+01 3.79e-03  9.01e+01     0s
+   6  -1.88748499e+03 -9.51928436e+02  4.96e+00 2.68e-04  5.79e+00     0s
+   7  -5.63565896e+02 -3.59530620e+02  1.46e+00 1.49e-05  2.27e+00     0s
+   8  -4.81466718e+02 -3.17478604e+01  1.21e+00 5.24e-06  9.38e-01     0s
+   9   1.16703479e+02 -9.70282849e+00  1.35e-01 4.93e-06  1.10e+00     0s
+  10   1.02993715e+02  3.00053200e+01  1.01e-01 2.83e-06  7.12e-01     0s
+  11   9.19919524e+01  6.61986441e+01  7.29e-02 2.55e-06  4.58e-01     0s
+  12   9.04949818e+01  2.05902863e+02  6.52e-02 2.20e-06  4.46e-01     0s
+  13   9.03826980e+01  8.92408460e+04  6.43e-02 1.23e-06  1.24e+00     0s
+  14   7.27858991e+01  9.12886125e+03  2.99e-02 1.24e-06  4.10e+00     0s
+  15   7.48657927e+01  1.02465510e+05  2.84e-02 1.01e-06  4.75e+00     0s
+  16   7.35755917e+01  2.21408375e+06  2.83e-02 9.28e-07  1.02e+01     0s
+  17   6.56121779e+01  2.25664108e+05  2.89e-02 6.78e-07  1.87e+01     0s
+  18   6.53532461e+01  2.42807607e+06  2.85e-02 6.10e-07  2.06e+01     0s
+  19   6.64513727e+01  1.31566260e+05  3.12e-02 1.96e-07  3.50e+00     0s
+  20   6.68189450e+01  8.93412587e+05  2.95e-02 1.86e-07  2.02e+02     0s
+  21   6.72623376e+01  1.75922194e+06  2.89e-02 1.81e-07  2.19e+02     0s
+  22   6.59802619e+01  6.92839005e+05  2.43e-02 1.36e-07  2.51e+02     0s
+  23   6.77082157e+01  1.61549180e+06  2.36e-02 1.36e-07  3.22e+02     0s
+  24   6.67763360e+01  8.27431056e+05  2.19e-02 1.01e-07  2.67e+02     0s
+  25   6.80949494e+01  2.15163848e+06  2.16e-02 9.53e-08  3.82e+02     0s
+  26   8.64930910e+01  9.29574019e+06  2.04e-02 1.11e-07  3.07e+02     0s
+  27   8.59130790e+01  7.08017384e+06  3.14e-02 7.66e-07  2.13e+02     0s
+  28   1.07265007e+02  9.61308617e+04  5.48e-02 3.48e-07  7.72e+00     0s
+  29   1.03363918e+02  5.92467324e+06  5.45e-02 2.55e-07  3.01e+01     0s
+  30   6.90058196e+01  1.58881471e+06  3.48e-02 2.74e-07  1.10e+01     0s
+  31   7.08614079e+01  1.60255326e+05  3.69e-02 2.52e-07  1.20e+01     0s
+  32   7.08240268e+01  1.40792220e+06  3.64e-02 2.36e-07  1.06e+01     0s
+  33   8.52174698e+01  1.66672885e+05  4.21e-02 3.57e-07  1.37e+01     0s
+  34   8.51842210e+01  1.49272051e+06  4.16e-02 3.30e-07  1.24e+01     0s
+  35   8.00679996e+01  1.13808120e+06  3.32e-02 5.14e-07  1.25e+01     0s
+  36   7.78684999e+01  1.15390128e+05  2.91e-02 6.10e-07  2.90e+00     0s
+  37   7.57644184e+01  1.16343031e+04  2.40e-02 5.97e-07  2.02e+00     0s
+  38   7.58792311e+01  5.15676169e+04  2.34e-02 5.44e-07  1.17e+00     0s
+  39   7.54846477e+01  4.88456549e+05  2.34e-02 5.41e-07  1.15e+00     0s
+  40   7.53615869e+01  4.94681120e+04  2.31e-02 7.17e-07  5.69e-01     0s
+  41   7.20940624e+01  4.99515421e+03  2.66e-02 7.10e-07  4.11e+00     0s
+  42   7.31866930e+01  1.03495343e+05  2.48e-02 2.99e-07  8.00e+00     0s
+  43   6.68266983e+01  1.03533761e+05  1.22e-01 2.28e-07  9.78e-02     0s
+  44   6.68759117e+01  1.05094619e+04  7.77e-02 2.21e-07  3.56e-01     0s
+  45   6.69155576e+01  1.74862728e+06  7.73e-02 2.10e-07  4.74e+00     0s
+  46   7.47906103e+01  1.76504713e+05  4.15e-02 1.47e-07  1.90e+00     0s
+  47   7.00600774e+01  1.78771135e+04  3.11e-02 1.56e-07  3.23e+00     0s
+  48   7.03011482e+01  3.65633277e+05  3.02e-02 1.04e-07  1.36e+01     0s
+  49   6.81116783e+01  3.94090693e+04  4.19e-02 1.10e-07  6.85e+01     0s
+  50   6.99283221e+01  5.26560546e+04  3.53e-02 1.04e-07  3.49e+01     0s
+  51   7.05177315e+01  2.56175996e+05  3.36e-02 1.15e-07  9.33e+01     0s
+  52   7.09505725e+01  6.09935940e+05  3.16e-02 1.09e-07  2.40e+01     0s
+  53   6.95342549e+01  6.16222992e+04  3.01e-02 8.40e-08  4.69e+00     0s
+  54   6.97329949e+01  1.38152455e+06  2.98e-02 6.70e-08  2.25e+01     0s
+  55   7.05892193e+01  1.39477569e+05  4.31e-02 9.76e-08  1.53e+01     0s
+  56   7.04796319e+01  3.11403799e+05  4.22e-02 9.59e-08  3.49e+00     0s
+  57   7.38887986e+01  3.15035135e+04  4.80e-02 1.13e-07  5.10e+00     0s
+  58   7.42053829e+01  1.69728692e+05  4.66e-02 1.00e-07  2.81e+00     0s
+  59   7.31551778e+01  1.72108293e+04  4.72e-02 1.21e-07  1.09e+00     0s
+  60   7.32321271e+01  1.50990910e+07  4.67e-02 2.38e-07  2.58e+02     0s
+  61   7.43763611e+01  1.42717092e+07  4.53e-02 2.10e-07  2.06e+02     0s
+  62   1.00793044e+02  8.90360586e+06  3.96e-02 3.81e-07  2.61e+01     0s
+  63   7.02932822e+01  1.78202768e+06  3.57e-02 4.69e-07  3.85e+00     0s
+  64   1.04617256e+02  6.25178386e+06  6.11e-02 3.73e-07  4.91e+02     0s
+  65   8.24337361e+01  1.11846461e+06  4.24e-02 1.84e-07  6.21e+01     0s
+  66   7.72774803e+01  1.12511728e+05  5.38e-02 1.56e-07  2.10e+02     0s
+  67   7.97726739e+01  4.63785043e+05  4.17e-02 4.61e-07  8.80e+01     0s
+  68   7.84016198e+01  3.96986549e+06  4.03e-02 3.91e-07  7.60e+01     0s
+  69   6.88946781e+01  2.24056437e+05  4.65e-02 1.19e-07  1.27e+01     0s
+  70   6.52202202e+01  2.26164306e+04  3.87e-02 1.02e-07  6.57e+00     0s
+  71   6.61123423e+01  1.55686964e+06  3.70e-02 2.09e-07  4.24e+01     0s
+  72   7.14724170e+01  1.57151828e+05  7.07e-02 1.44e-07  3.82e+01     0s
+  73   7.20126486e+01  8.35601551e+05  6.78e-02 1.24e-07  2.07e+01     0s
+
+Barrier performed 73 iterations in 0.03 seconds
+Numerical trouble encountered
+
+Model may be infeasible or unbounded.  Consider using the
+homogeneous algorithm (through parameter 'BarHomogeneous')
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:15:33 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 177 rows, 21 columns, 1545 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 177 rows, 21 columns and 1545 nonzeros
+Model fingerprint: 0x9612e345
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e-07, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e+01, 3e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-02, 8e+00]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 147 rows, 112 columns, 1249 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 8.442e+03
+ Factor NZ  : 9.510e+03
+ Factor Ops : 7.978e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.22602318e+03  1.21146199e+03  1.41e+02 7.59e+01  1.15e+01     0s
+   1  -4.12036052e+03  1.20475931e+03  1.41e+02 7.43e+01  1.07e+01     0s
+   2   1.09033040e+03  1.13476612e+03  1.35e+02 6.15e+01  4.61e+01     0s
+   3  -2.54064764e+04  1.03808822e+03  1.44e+02 5.04e+01  4.54e+01     0s
+   4  -3.50482880e+04  9.65807974e+02  1.56e+02 4.63e+01  4.19e+01     0s
+   5  -2.43779107e+04 -1.06013561e+03  9.53e+01 3.79e-03  9.01e+01     0s
+   6  -1.88748499e+03 -9.51928436e+02  4.96e+00 2.68e-04  5.79e+00     0s
+   7  -5.63565896e+02 -3.59530620e+02  1.46e+00 1.49e-05  2.27e+00     0s
+   8  -4.81466718e+02 -3.17478604e+01  1.21e+00 5.24e-06  9.38e-01     0s
+   9   1.16703479e+02 -9.70282849e+00  1.35e-01 4.93e-06  1.10e+00     0s
+  10   1.02993715e+02  3.00053200e+01  1.01e-01 2.83e-06  7.12e-01     0s
+  11   9.19919524e+01  6.61986441e+01  7.29e-02 2.55e-06  4.58e-01     0s
+  12   9.04949818e+01  2.05902863e+02  6.52e-02 2.20e-06  4.46e-01     0s
+  13   9.03826980e+01  8.92408460e+04  6.43e-02 1.23e-06  1.24e+00     0s
+  14   7.27858991e+01  9.12886125e+03  2.99e-02 1.24e-06  4.10e+00     0s
+  15   7.48657927e+01  1.02465510e+05  2.84e-02 1.01e-06  4.75e+00     0s
+  16   7.35755917e+01  2.21408375e+06  2.83e-02 9.28e-07  1.02e+01     0s
+  17   6.56121779e+01  2.25664108e+05  2.89e-02 6.78e-07  1.87e+01     0s
+  18   6.53532461e+01  2.42807607e+06  2.85e-02 6.10e-07  2.06e+01     0s
+  19   6.64513727e+01  1.31566260e+05  3.12e-02 1.96e-07  3.50e+00     0s
+  20   6.68189450e+01  8.93412587e+05  2.95e-02 1.86e-07  2.02e+02     0s
+  21   6.72623376e+01  1.75922194e+06  2.89e-02 1.81e-07  2.19e+02     0s
+  22   6.59802619e+01  6.92839005e+05  2.43e-02 1.36e-07  2.51e+02     0s
+  23   6.77082157e+01  1.61549180e+06  2.36e-02 1.36e-07  3.22e+02     0s
+  24   6.67763360e+01  8.27431056e+05  2.19e-02 1.01e-07  2.67e+02     0s
+  25   6.80949494e+01  2.15163848e+06  2.16e-02 9.53e-08  3.82e+02     0s
+  26   8.64930910e+01  9.29574019e+06  2.04e-02 1.11e-07  3.07e+02     0s
+  27   8.59130790e+01  7.08017384e+06  3.14e-02 7.66e-07  2.13e+02     0s
+  28   1.07265007e+02  9.61308617e+04  5.48e-02 3.48e-07  7.72e+00     0s
+  29   1.03363918e+02  5.92467324e+06  5.45e-02 2.55e-07  3.01e+01     0s
+  30   6.90058196e+01  1.58881471e+06  3.48e-02 2.74e-07  1.10e+01     0s
+  31   7.08614079e+01  1.60255326e+05  3.69e-02 2.52e-07  1.20e+01     0s
+  32   7.08240268e+01  1.40792220e+06  3.64e-02 2.36e-07  1.06e+01     0s
+  33   8.52174698e+01  1.66672885e+05  4.21e-02 3.57e-07  1.37e+01     0s
+  34   8.51842210e+01  1.49272051e+06  4.16e-02 3.30e-07  1.24e+01     0s
+  35   8.00679996e+01  1.13808120e+06  3.32e-02 5.14e-07  1.25e+01     0s
+  36   7.78684999e+01  1.15390128e+05  2.91e-02 6.10e-07  2.90e+00     0s
+  37   7.57644184e+01  1.16343031e+04  2.40e-02 5.97e-07  2.02e+00     0s
+  38   7.58792311e+01  5.15676169e+04  2.34e-02 5.44e-07  1.17e+00     0s
+  39   7.54846477e+01  4.88456549e+05  2.34e-02 5.41e-07  1.15e+00     0s
+  40   7.53615869e+01  4.94681120e+04  2.31e-02 7.17e-07  5.69e-01     0s
+  41   7.20940624e+01  4.99515421e+03  2.66e-02 7.10e-07  4.11e+00     0s
+  42   7.31866930e+01  1.03495343e+05  2.48e-02 2.99e-07  8.00e+00     0s
+  43   6.68266983e+01  1.03533761e+05  1.22e-01 2.28e-07  9.78e-02     0s
+  44   6.68759117e+01  1.05094619e+04  7.77e-02 2.21e-07  3.56e-01     0s
+  45   6.69155576e+01  1.74862728e+06  7.73e-02 2.10e-07  4.74e+00     0s
+  46   7.47906103e+01  1.76504713e+05  4.15e-02 1.47e-07  1.90e+00     0s
+  47   7.00600774e+01  1.78771135e+04  3.11e-02 1.56e-07  3.23e+00     0s
+  48   7.03011482e+01  3.65633277e+05  3.02e-02 1.04e-07  1.36e+01     0s
+  49   6.81116783e+01  3.94090693e+04  4.19e-02 1.10e-07  6.85e+01     0s
+  50   6.99283221e+01  5.26560546e+04  3.53e-02 1.04e-07  3.49e+01     0s
+  51   7.05177315e+01  2.56175996e+05  3.36e-02 1.15e-07  9.33e+01     0s
+  52   7.09505725e+01  6.09935940e+05  3.16e-02 1.09e-07  2.40e+01     0s
+  53   6.95342549e+01  6.16222992e+04  3.01e-02 8.40e-08  4.69e+00     0s
+  54   6.97329949e+01  1.38152455e+06  2.98e-02 6.70e-08  2.25e+01     0s
+  55   7.05892193e+01  1.39477569e+05  4.31e-02 9.76e-08  1.53e+01     0s
+  56   7.04796319e+01  3.11403799e+05  4.22e-02 9.59e-08  3.49e+00     0s
+  57   7.38887986e+01  3.15035135e+04  4.80e-02 1.13e-07  5.10e+00     0s
+  58   7.42053829e+01  1.69728692e+05  4.66e-02 1.00e-07  2.81e+00     0s
+  59   7.31551778e+01  1.72108293e+04  4.72e-02 1.21e-07  1.09e+00     0s
+  60   7.32321271e+01  1.50990910e+07  4.67e-02 2.38e-07  2.58e+02     0s
+  61   7.43763611e+01  1.42717092e+07  4.53e-02 2.10e-07  2.06e+02     0s
+  62   1.00793044e+02  8.90360586e+06  3.96e-02 3.81e-07  2.61e+01     0s
+  63   7.02932822e+01  1.78202768e+06  3.57e-02 4.69e-07  3.85e+00     0s
+  64   1.04617256e+02  6.25178386e+06  6.11e-02 3.73e-07  4.91e+02     0s
+  65   8.24337361e+01  1.11846461e+06  4.24e-02 1.84e-07  6.21e+01     0s
+  66   7.72774803e+01  1.12511728e+05  5.38e-02 1.56e-07  2.10e+02     0s
+  67   7.97726739e+01  4.63785043e+05  4.17e-02 4.61e-07  8.80e+01     0s
+  68   7.84016198e+01  3.96986549e+06  4.03e-02 3.91e-07  7.60e+01     0s
+  69   6.88946781e+01  2.24056437e+05  4.65e-02 1.19e-07  1.27e+01     0s
+  70   6.52202202e+01  2.26164306e+04  3.87e-02 1.02e-07  6.57e+00     0s
+  71   6.61123423e+01  1.55686964e+06  3.70e-02 2.09e-07  4.24e+01     0s
+  72   7.14724170e+01  1.57151828e+05  7.07e-02 1.44e-07  3.82e+01     0s
+  73   7.20126486e+01  8.35601551e+05  6.78e-02 1.24e-07  2.07e+01     0s
+
+Barrier performed 73 iterations in 0.03 seconds
+Numerical trouble encountered
+
+Model may be infeasible or unbounded.  Consider using the
+homogeneous algorithm (through parameter 'BarHomogeneous')
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:24:39 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Warning: indicator constraint GC40 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC48 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC56 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC64 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC72 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC80 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC88 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC96 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC104 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC112 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC120 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC128 contains 4 small (<= 1e-13) coefficient(s), ignored
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 147 rows, 28 columns, 887 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 147 rows, 28 columns and 887 nonzeros
+Model fingerprint: 0x21c0b739
+Model has 78 quadratic objective terms
+Model has 3 quadratic constraints
+Model has 136 general constraints
+Variable types: 24 continuous, 4 integer (4 binary)
+Coefficient statistics:
+  Matrix range     [9e-07, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [8e-01, 6e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+01]
+  QRHS range       [7e-01, 3e+00]
+Presolve added 136 rows and 136 columns
+Presolve time: 0.00s
+Presolved: 283 rows, 164 columns, 1859 nonzeros
+Presolved model has 136 SOS constraint(s)
+Presolved model has 78 quadratic objective terms
+Presolved model has 3 quadratic constraint(s)
+Variable types: 160 continuous, 4 integer (4 binary)
+
+Root relaxation: objective 4.940850e+01, 149 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.40850    0   16          -   49.40850      -     -    0s
+H    0     0                     122.3749551   49.40850  59.6%     -    0s
+     0     0   99.77989    0   15  122.37496   99.77989  18.5%     -    0s
+H    0     0                     108.4319633   99.77989  7.98%     -    0s
+     0     0  103.27839    0    6  108.43196  103.27839  4.75%     -    0s
+     0     0  103.37425    0    7  108.43196  103.37425  4.66%     -    0s
+     0     0  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+     0     0  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+     0     2  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+H    5     1                     104.0237170  103.38105  0.62%   9.2    0s
+*    5     1               2     104.0237170  103.84728  0.17%  12.8    0s
+
+Explored 11 nodes (343 simplex iterations) in 0.14 seconds
+Thread count was 16 (of 16 available processors)
+
+Solution count 3: 104.024 108.432 122.375 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.040237169945e+02, best bound 1.040190655799e+02, gap 0.0045%
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:47:10 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Warning: indicator constraint GC40 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC48 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC56 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC64 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC72 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC80 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC88 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC96 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC104 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC112 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC120 contains 4 small (<= 1e-13) coefficient(s), ignored
+Warning: indicator constraint GC128 contains 4 small (<= 1e-13) coefficient(s), ignored
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 147 rows, 28 columns, 887 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 147 rows, 28 columns and 887 nonzeros
+Model fingerprint: 0x21c0b739
+Model has 78 quadratic objective terms
+Model has 3 quadratic constraints
+Model has 136 general constraints
+Variable types: 24 continuous, 4 integer (4 binary)
+Coefficient statistics:
+  Matrix range     [9e-07, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [8e-01, 6e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+01]
+  QRHS range       [7e-01, 3e+00]
+Presolve added 136 rows and 136 columns
+Presolve time: 0.00s
+Presolved: 283 rows, 164 columns, 1859 nonzeros
+Presolved model has 136 SOS constraint(s)
+Presolved model has 78 quadratic objective terms
+Presolved model has 3 quadratic constraint(s)
+Variable types: 160 continuous, 4 integer (4 binary)
+
+Root relaxation: objective 4.940850e+01, 149 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.40850    0   16          -   49.40850      -     -    0s
+H    0     0                     122.3749551   49.40850  59.6%     -    0s
+     0     0   99.77989    0   15  122.37496   99.77989  18.5%     -    0s
+H    0     0                     108.4319633   99.77989  7.98%     -    0s
+     0     0  103.27839    0    6  108.43196  103.27839  4.75%     -    0s
+     0     0  103.37425    0    7  108.43196  103.37425  4.66%     -    0s
+     0     0  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+     0     0  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+     0     2  103.38105    0    7  108.43196  103.38105  4.66%     -    0s
+H    5     1                     104.0237170  103.38105  0.62%   9.2    0s
+*    5     1               2     104.0237170  103.84728  0.17%  12.8    0s
+
+Explored 11 nodes (343 simplex iterations) in 0.14 seconds
+Thread count was 16 (of 16 available processors)
+
+Solution count 3: 104.024 108.432 122.375 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.040237169945e+02, best bound 1.040190655799e+02, gap 0.0045%
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 16:49:07 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 198 rows, 26 columns, 1589 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 198 rows, 26 columns and 1589 nonzeros
+Model fingerprint: 0x7d8a48e3
+Model has 78 quadratic objective terms
+Model has 3 quadratic constraints
+Model has 76 general constraints
+Variable types: 24 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [9e-05, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [3e+00, 4e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-02, 4e+00]
+  QRHS range       [6e-01, 4e+00]
+Presolve added 76 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 274 rows, 102 columns, 2289 nonzeros
+Presolved model has 76 SOS constraint(s)
+Presolved model has 78 quadratic objective terms
+Presolved model has 3 quadratic constraint(s)
+Variable types: 100 continuous, 2 integer (2 binary)
+
+Root relaxation: objective 1.200119e+02, 280 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  120.01194    0    5          -  120.01194      -     -    0s
+     0     0  129.78323    0    4          -  129.78323      -     -    0s
+     0     0  146.91836    0    5          -  146.91836      -     -    0s
+     0     0  147.34241    0    5          -  147.34241      -     -    0s
+     0     0  147.35035    0    5          -  147.35035      -     -    0s
+     0     0  147.36030    0    5          -  147.36030      -     -    0s
+H    0     0                     238.5493972  147.36030  38.2%     -    0s
+H    0     0                     227.4660465  147.36030  35.2%     -    0s
+     0     2  147.36030    0    5  227.46605  147.36030  35.2%     -    0s
+H    1     0                     163.1938091  147.36030  9.70%   0.0    0s
+*    1     0               1     163.1938091  147.36030  9.70%  25.0    0s
+
+Explored 10 nodes (466 simplex iterations) in 0.12 seconds
+Thread count was 16 (of 16 available processors)
+
+Solution count 3: 163.194 227.466 238.549 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.6283e-05) exceeds tolerance
+Warning: max general constraint violation (2.0797e-06) exceeds tolerance
+Best objective 1.631938090959e+02, best bound 1.631926900913e+02, gap 0.0007%
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:01:51 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 198 rows, 26 columns, 1589 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 198 rows, 26 columns and 1589 nonzeros
+Model fingerprint: 0xb287c5f7
+Model has 78 quadratic objective terms
+Model has 3 quadratic constraints
+Model has 76 general constraints
+Variable types: 24 continuous, 2 integer (2 binary)
+Coefficient statistics:
+  Matrix range     [9e-05, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [3e+00, 4e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-02, 4e+00]
+  QRHS range       [6e-01, 4e+00]
+Presolve added 76 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 274 rows, 102 columns, 2289 nonzeros
+Presolved model has 76 SOS constraint(s)
+Presolved model has 78 quadratic objective terms
+Presolved model has 3 quadratic constraint(s)
+Variable types: 100 continuous, 2 integer (2 binary)
+
+Root relaxation: objective 1.157330e+02, 292 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  115.73297    0    5          -  115.73297      -     -    0s
+     0     0  125.43392    0    4          -  125.43392      -     -    0s
+     0     0  142.49200    0    5          -  142.49200      -     -    0s
+     0     0  142.91223    0    5          -  142.91223      -     -    0s
+     0     0  142.91984    0    5          -  142.91984      -     -    0s
+     0     0  142.92958    0    5          -  142.92958      -     -    0s
+H    0     0                     234.2137495  142.92958  39.0%     -    0s
+H    0     0                     223.2230822  142.92958  36.0%     -    0s
+     0     2  142.92958    0    5  223.22308  142.92958  36.0%     -    0s
+H    1     0                     158.7891208  142.92958  10.0%   0.0    0s
+*    1     0               1     158.7891208  142.92958  10.0%  25.0    0s
+
+Explored 10 nodes (481 simplex iterations) in 0.12 seconds
+Thread count was 16 (of 16 available processors)
+
+Solution count 3: 158.789 223.223 234.214 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.587891208375e+02, best bound 1.587845132017e+02, gap 0.0029%
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:10:15 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.01 seconds
+Optimal objective 4.80329896e+01
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:11:15 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.00 seconds
+Optimal objective 4.80329896e+01
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:11:15 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.01 seconds
+Optimal objective 4.80329896e+01
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:11:16 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.00 seconds
+Optimal objective 4.80329896e+01
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:11:17 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.01 seconds
+Optimal objective 4.80329896e+01
+
+
+Gurobi 9.1.0 (linux64, gurobi_cl) logging started Tue Jul 26 17:11:17 2022
+
+Using license file /home/gyl/gurobi.lic
+Set parameter LogFile to value gurobi.log
+Academic license - for non-commercial use only - expires 2022-12-15
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Copyright (c) 2020, Gurobi Optimization, LLC
+
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 129 rows, 21 columns, 969 nonzeros
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+Optimize a model with 129 rows, 21 columns and 969 nonzeros
+Model fingerprint: 0x1f1a2371
+Model has 66 quadratic objective terms
+Model has 2 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e-08, 2e+00]
+  QMatrix range    [1e+00, 2e+00]
+  Objective range  [1e-01, 2e+02]
+  QObjective range [4e+00, 8e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-02, 1e+01]
+  QRHS range       [4e+00, 4e+00]
+Presolve removed 60 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 99 rows, 112 columns, 673 nonzeros
+Presolved model has 3 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ Free vars  : 21
+ AA' NZ     : 2.994e+03
+ Factor NZ  : 3.533e+03
+ Factor Ops : 1.519e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0  -5.04253024e+03 -5.05793748e+03  7.63e+02 1.06e+02  5.92e+01     0s
+   1  -1.41910787e+04 -4.72269158e+03  7.59e+02 9.96e+01  6.79e+01     0s
+   2  -3.29418014e+04 -3.88605912e+03  7.04e+02 8.22e+01  1.17e+02     0s
+   3  -5.74129859e+04 -3.62144905e+03  5.79e+02 7.78e+01  7.02e+01     0s
+   4  -8.20367931e+04 -3.43209953e+03  5.71e+02 7.23e+01  5.57e+01     0s
+   5  -1.01475794e+05 -2.97628911e+03  5.59e+02 6.41e+01  4.24e+01     0s
+   6  -5.02080974e+04 -2.15375267e+03  3.22e+02 4.55e+01  6.55e+01     0s
+   7  -3.39641113e+04 -5.08212165e+02  2.77e+02 4.63e-01  3.29e+02     0s
+   8  -5.93563727e+02 -4.35153835e+02  4.45e+00 1.12e-03  8.78e+00     0s
+   9  -3.36643412e+02 -6.09239812e+01  2.49e+00 2.71e-04  4.06e+00     0s
+  10  -8.30865091e+01 -1.13268126e+01  6.17e-01 2.28e-06  9.86e-01     0s
+  11  -4.80903610e+01  1.65025677e+01  4.72e-01 1.52e-06  5.27e-01     0s
+  12   5.08396737e+00  2.13562948e+01  1.15e-01 9.49e-07  1.31e-01     0s
+  13   1.47081539e+01  3.95919588e+01  8.36e-02 3.48e-07  3.55e-02     0s
+  14   2.76491732e+01  4.04476575e+01  5.38e-02 3.41e-07  4.56e-02     0s
+  15   4.99677827e+01  4.43736706e+01  1.83e-04 2.11e-07  3.72e-02     0s
+  16   4.83750489e+01  4.78840963e+01  5.43e-05 8.00e-08  3.38e-03     0s
+  17   4.80413595e+01  4.80285605e+01  7.47e-07 6.98e-09  8.59e-05     0s
+  18   4.80337518e+01  4.80326847e+01  5.34e-08 2.17e-08  7.25e-06     0s
+  19   4.80330842e+01  4.80328734e+01  1.11e-08 8.22e-09  1.44e-06     0s
+  20   4.80329896e+01  4.80329457e+01  3.23e-09 1.80e-09  3.04e-07     0s
+
+Barrier solved model in 20 iterations and 0.01 seconds
+Optimal objective 4.80329896e+01
+

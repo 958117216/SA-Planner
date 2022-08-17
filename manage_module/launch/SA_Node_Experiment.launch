@@ -1,0 +1,125 @@
+<launch>
+
+<arg name="Odom_Topic" default="/mavros/local_position/odom" />
+<arg name="Depth_Image_Topic" default="/realsense_plugin/camera/depth/image_raw"/>
+
+<arg name="Ctrl_CMD_Topic" default="/prometheus/control_command"/>
+
+<arg name="Max_Vel" default="2.0"/>
+<arg name="Max_Acc" default="2.0"/>
+<arg name="Resolution" default="0.2"/>
+
+  <!-- 订阅里程计和期望位置 更新Rviz仿真中无人机的位置 -->
+  <node pkg="odom_visualization" name="odom_visualization" type="odom_visualization" output="screen">
+        <remap from="~odom" to="$(arg Odom_Topic)"/>
+        <param name="color/a" value="1.0"/>    
+        <param name="color/r" value="0.0"/>        
+        <param name="color/g" value="0.0"/>        
+        <param name="color/b" value="1.0"/>       
+        <param name="cross_config" value="true"/>
+        <param name="covariance_scale" value="100.0"/>       
+        <param name="robot_scale" value="1.0"/>
+  </node>
+
+<node pkg="manage_module" name="sa_planner_node" type="sa_planner_node" output="screen">
+  <!-- FSM -->
+  <remap from="/odom_world" to="$(arg Odom_Topic)"/>
+    <!-- enum TARGET_TYPE { MANUAL_TARGET = 1, PRESET_TARGET = 2, INCREASE_TARGET = 3}; -->
+  <param name="fsm/flight_type" value="3" type="int"/>
+  <param name="fsm/thresh_replan" value="2.0" type="double"/>
+  <param name="fsm/thresh_no_replan" value="0.4" type="double"/>
+  <param name="fsm/checkTrajCollision_dist" value="0.0" type="double"/>
+
+  <param name="fsm/waypoint_num" value="2" type="int"/>
+  <param name="fsm/waypoint0_x" value="30.0" type="double"/>
+  <param name="fsm/waypoint0_y" value=" 0.0" type="double"/>
+  <param name="fsm/waypoint0_z" value="0.0" type="double"/>
+
+  <param name="fsm/waypoint1_x" value="-30.0" type="double"/>
+  <param name="fsm/waypoint1_y" value="0.0" type="double"/>
+  <param name="fsm/waypoint1_z" value="0.0" type="double"/>
+
+  <!-- ManageModule -->
+  <param name="manager/max_vel" value="$(arg Max_Vel)" type="double"/>
+  <param name="manager/max_acc" value="$(arg Max_Acc)" type="double"/>
+  <param name="manager/max_jerk" value="6.0" type="double"/>
+
+  <!-- MapModule -->
+  <remap from="/swin_map/odom" to="$(arg Odom_Topic)"/>
+  <remap from="/swin_map/depth" to="$(arg Depth_Image_Topic)"/>
+
+  <!-- 防止乱码 -->
+  <param name="swin_map/map_center_x" value="0.0" type="double"/>
+  <param name="swin_map/map_center_y" value="0.0" type="double"/>
+  <param name="swin_map/map_center_z" value="0.0" type="double"/>
+
+  <param name="swin_map/map_size_x" value="15.0" type="double"/>
+  <param name="swin_map/map_size_y" value="15.0" type="double"/>
+  <param name="swin_map/map_size_z" value="3.0" type="double"/>
+  <param name="swin_map/resolution" value="$(arg Resolution)" type="double"/>
+
+  <param name="swin_map/fx" value="554.3826904296875" type="double"/>
+  <param name="swin_map/fy" value="554.3826904296875" type="double"/>
+  <param name="swin_map/cx" value="320.0" type="double"/>
+  <param name="swin_map/cy" value="240.0" type="double"/>
+
+  <param name="swin_map/use_depth_filter" value="true" type="bool"/>
+  <param name="swin_map/depth_filter_tolerance" value="0.15" type="double"/>
+  <param name="swin_map/depth_filter_maxdist"   value="6.0" type="double" />
+  <param name="swin_map/depth_filter_mindist"   value="0.2" type="double"/>
+  <param name="swin_map/depth_filter_margin"    value="4" type="int"/>
+  <param name="swin_map/k_depth_scaling_factor" value="1000.0" type="double"/>
+  <param name="swin_map/skip_pixel" value="4" type="int"/>
+
+  <param name="swin_map/min_ray_length" value="0.2" type="double"/>
+  <param name="swin_map/max_ray_length" value="5.0" type="double"/>
+  <param name="swin_map/inflate_size" value="2" type="int"/> <!-- 地图膨胀栅格大小 -->
+
+  <param name="swin_map/init_value" value="-1.0" type="double"/>
+  <param name="swin_map/hit_inc" value="0.4" type="double"/>
+  <param name="swin_map/miss_inc" value="-0.1" type="double"/>
+  <param name="swin_map/occupancy_threshold" value="0.6" type="double"/>
+
+  <param name="swin_map/esdf_slice_height" value="999.0" type="double"/>  <!-- 999固定为地图中间层 -->
+  <param name="swin_map/visualization_truncate_height" value="100.0" type="double"/>
+  <!-- <param name="swin_map/virtual_ceil_height" value="-0.1" type="double"/> -->
+  <!-- <param name="swin_map/ground_height" value="0.6" type="double"/> -->
+  
+  <param name="swin_map/show_occ_time" value="false" type="bool"/>  <!-- 用时>4ms -->
+  <param name="swin_map/show_esdf_time" value="false" type="bool"/> <!-- 用时>100ms -->
+
+  <param name="swin_map/frame_id" value="world" type="string"/>
+  <param name="swin_map/pose_type" value="1" type="int"/>
+
+  <!-- SearchModule -->
+  <param name="uu_dirc_ctrl_astar/astar_node_allocate_num_" value="50000" type="int"/>
+  <param name="uu_dirc_ctrl_astar/ctrl_node_allocate_num_" value="1000000" type="int"/>
+  <param name="uu_dirc_ctrl_astar/resolution_astar" value="$(arg Resolution)" type="double"/>
+  <param name="uu_dirc_ctrl_astar/lambda_heu" value="1.0" type="double"/>
+  <param name="uu_dirc_ctrl_astar/margin" value="0.2" type="double"/> <!-- 应该是分辨率的整数倍 -->
+  <param name="uu_dirc_ctrl_astar/degree" value="3" type="int"/>
+  <param name="uu_dirc_ctrl_astar/max_vel" value="$(arg Max_Vel)" type="double"/>
+  <param name="uu_dirc_ctrl_astar/max_acc" value="$(arg Max_Acc)" type="double"/>
+  <param name="uu_dirc_ctrl_astar/delta_t" value="1.0" type="double"/>
+  <param name="uu_dirc_ctrl_astar/TerminationCPNum" value="10" type="int"/>        <!-- 和casadi_opt/FixedCPNum相对应 -->
+  <param name="uu_dirc_ctrl_astar/reduced_threshold" value="3.0" type="double"/>   <!--负值 意味着以Smax 扩张，但依然不是最大的速度Vmax-->
+  <param name="uu_dirc_ctrl_astar/reduced_vel" value="0.3" type="double"/>
+ <param name="uu_dirc_ctrl_astar/show_rviz" value="true" type="bool"/>
+
+
+  <!-- OptModule -->
+  <param name="gurobi_opt/max_vel" value="$(arg Max_Vel)" type="double"/>
+  <param name="gurobi_opt/max_acc" value="$(arg Max_Acc)" type="double"/>
+  <param name="gurobi_opt/IterationNum" value="1" type="int"/>
+  <param name="gurobi_opt/margin" value="0.0" type="double"/><!-- 该参数为了屏蔽栅格化的副作用应大于分辨率 -->
+  <param name="gurobi_opt/show_rviz" value="true" type="bool"/>
+</node>
+
+
+  <!-- trajectory server -->
+<node pkg="manage_module" name="sa_traj_server" type="sa_traj_server" output="screen">
+   <remap from="/prometheus/sa_planner/control_command" to="$(arg Ctrl_CMD_Topic)"/>
+</node>
+
+
+</launch>

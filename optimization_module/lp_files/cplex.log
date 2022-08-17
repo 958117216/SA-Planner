@@ -1,0 +1,697 @@
+
+Log started (V22.1.0.0) Tue Jul 26 16:49:26 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2222.4495     0                                   41         
+      0     0    -1653.6011     1                     Cone: 4       45         
+      0     0    -1457.1296     1                     Cone: 8       55         
+      0     0    -1260.8329     1                    Cone: 12       65         
+      0     0    -1099.8830     1                    Cone: 16       72         
+      0     0     -715.3100     1                    Cone: 20       90         
+      0     0     -681.4506     1                    Cone: 24       93         
+      0     0      147.3628     1                    Cone: 61      166         
+      0     0      147.3628     1                    Cone: 94      175         
+      0     0      147.3628     1                   Cone: 125      185         
+      0     0      147.3628     1                   Cone: 151      193         
+      0     0      147.3628     1                   Cone: 171      201         
+      0     0      147.3628     1                   Cone: 189      209         
+      0     0      147.3628     1                   Cone: 206      217         
+      0     0      147.3628     1                   Cone: 212      223         
+      0     0      147.3628     1                   Cone: 215      226         
+      0     0      147.3628     1                   Cone: 217      227         
+      0     0      147.3628     1                    147.3628      227         
+*     0+    0                          227.4660      147.3628            35.22%
+      0     2      147.3628     1      227.4660      147.3628      227   35.22%
+Elapsed time = 0.23 sec. (135.87 ticks, tree = 0.02 MB, solutions = 1)
+*     1     1      integral     0      227.4660      147.3628      418   35.22%
+*     2     1      integral     0      163.1954      147.3628      274    9.70%
+
+Cone linearizations applied:  387
+
+Root node processing (before b&c):
+  Real time             =    0.22 sec. (135.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.06 sec. (139.08 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.27 sec. (274.67 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.28 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 274.67 ticks  (981.73 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.00 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 0.00 ticks  (0.31 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.00 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 0.00 ticks  (0.63 ticks/sec)
+
+
+Log started (V22.1.0.0) Tue Jul 26 16:51:30 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2222.4495     0                                   41         
+      0     0    -1653.6011     1                     Cone: 4       45         
+      0     0    -1457.1296     1                     Cone: 8       55         
+      0     0    -1260.8329     1                    Cone: 12       65         
+      0     0    -1099.8830     1                    Cone: 16       72         
+      0     0     -715.3100     1                    Cone: 20       90         
+      0     0     -681.4506     1                    Cone: 24       93         
+      0     0      147.3628     1                    Cone: 61      166         
+      0     0      147.3628     1                    Cone: 94      175         
+      0     0      147.3628     1                   Cone: 125      185         
+      0     0      147.3628     1                   Cone: 151      193         
+      0     0      147.3628     1                   Cone: 171      201         
+      0     0      147.3628     1                   Cone: 189      209         
+      0     0      147.3628     1                   Cone: 206      217         
+      0     0      147.3628     1                   Cone: 212      223         
+      0     0      147.3628     1                   Cone: 215      226         
+      0     0      147.3628     1                   Cone: 217      227         
+      0     0      147.3628     1                    147.3628      227         
+*     0+    0                          227.4660      147.3628            35.22%
+      0     2      147.3628     1      227.4660      147.3628      227   35.22%
+Elapsed time = 0.23 sec. (135.87 ticks, tree = 0.02 MB, solutions = 1)
+*     1     1      integral     0      227.4660      147.3628      418   35.22%
+*     2     1      integral     0      163.1954      147.3628      274    9.70%
+
+Cone linearizations applied:  387
+
+Root node processing (before b&c):
+  Real time             =    0.22 sec. (135.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.05 sec. (139.08 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.27 sec. (274.67 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.28 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 274.67 ticks  (991.75 ticks/sec)
+
+
+Log started (V22.1.0.0) Tue Jul 26 16:51:58 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2222.4495     0                                   41         
+      0     0    -1653.6011     1                     Cone: 4       45         
+      0     0    -1457.1296     1                     Cone: 8       55         
+      0     0    -1260.8329     1                    Cone: 12       65         
+      0     0    -1099.8830     1                    Cone: 16       72         
+      0     0     -715.3100     1                    Cone: 20       90         
+      0     0     -681.4506     1                    Cone: 24       93         
+      0     0      147.3628     1                    Cone: 61      166         
+      0     0      147.3628     1                    Cone: 94      175         
+      0     0      147.3628     1                   Cone: 125      185         
+      0     0      147.3628     1                   Cone: 151      193         
+      0     0      147.3628     1                   Cone: 171      201         
+      0     0      147.3628     1                   Cone: 189      209         
+      0     0      147.3628     1                   Cone: 206      217         
+      0     0      147.3628     1                   Cone: 212      223         
+      0     0      147.3628     1                   Cone: 215      226         
+      0     0      147.3628     1                   Cone: 217      227         
+      0     0      147.3628     1                    147.3628      227         
+*     0+    0                          227.4660      147.3628            35.22%
+      0     2      147.3628     1      227.4660      147.3628      227   35.22%
+Elapsed time = 0.23 sec. (135.87 ticks, tree = 0.02 MB, solutions = 1)
+*     1     1      integral     0      227.4660      147.3628      418   35.22%
+*     2     1      integral     0      163.1954      147.3628      274    9.70%
+
+Cone linearizations applied:  387
+
+Root node processing (before b&c):
+  Real time             =    0.22 sec. (135.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.06 sec. (139.08 ticks)
+  Sync time (average)   =    0.05 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.29 sec. (274.67 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.30 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 274.67 ticks  (926.94 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.05 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.00 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 0.00 ticks  (0.43 ticks/sec)
+
+
+Log started (V22.1.0.0) Tue Jul 26 16:52:47 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2222.4495     0                                   41         
+      0     0    -1653.6011     1                     Cone: 4       45         
+      0     0    -1457.1296     1                     Cone: 8       55         
+      0     0    -1260.8329     1                    Cone: 12       65         
+      0     0    -1099.8830     1                    Cone: 16       72         
+      0     0     -715.3100     1                    Cone: 20       90         
+      0     0     -681.4506     1                    Cone: 24       93         
+      0     0      147.3628     1                    Cone: 61      166         
+      0     0      147.3628     1                    Cone: 94      175         
+      0     0      147.3628     1                   Cone: 125      185         
+      0     0      147.3628     1                   Cone: 151      193         
+      0     0      147.3628     1                   Cone: 171      201         
+      0     0      147.3628     1                   Cone: 189      209         
+      0     0      147.3628     1                   Cone: 206      217         
+      0     0      147.3628     1                   Cone: 212      223         
+      0     0      147.3628     1                   Cone: 215      226         
+      0     0      147.3628     1                   Cone: 217      227         
+      0     0      147.3628     1                    147.3628      227         
+*     0+    0                          227.4660      147.3628            35.22%
+      0     2      147.3628     1      227.4660      147.3628      227   35.22%
+Elapsed time = 0.23 sec. (135.87 ticks, tree = 0.02 MB, solutions = 1)
+*     1     1      integral     0      227.4660      147.3628      418   35.22%
+*     2     1      integral     0      163.1954      147.3628      274    9.70%
+
+Cone linearizations applied:  387
+
+Root node processing (before b&c):
+  Real time             =    0.22 sec. (135.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.06 sec. (139.08 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.28 sec. (274.67 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.28 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 274.67 ticks  (969.39 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.6319539516e+02
+Solution time =    0.00 sec.  Iterations = 465  Nodes = 3
+Deterministic time = 0.00 ticks  (0.62 ticks/sec)
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2229.6798     0                                   41         
+      0     0    -1660.7266     1                     Cone: 4       46         
+      0     0    -1534.6784     1                     Cone: 8       59         
+      0     0    -1146.1047     1                    Cone: 12       79         
+      0     0    -1062.5598     1                    Cone: 16       87         
+      0     0     -806.5321     1                    Cone: 20      101         
+      0     0     -771.7539     1                    Cone: 24      108         
+      0     0      142.9314     1                    Cone: 61      181         
+      0     0      142.9317     1                    Cone: 93      203         
+      0     0      142.9319     1                   Cone: 121      218         
+      0     0      142.9320     1                   Cone: 143      238         
+      0     0      142.9320     1                   Cone: 161      251         
+      0     0      142.9321     1                   Cone: 172      257         
+      0     0      142.9321     1                   Cone: 179      264         
+      0     0      142.9321     1                   Cone: 187      270         
+      0     0      142.9321     1                   Cone: 192      272         
+      0     0      142.9321     1                   Cone: 195      273         
+      0     0      142.9321     1                   Cone: 197      274         
+      0     0      142.9321     1                   Cone: 199      275         
+      0     0      142.9321     1                    142.9321      275         
+*     0+    0                          223.2231      142.9321            35.97%
+      0     2      142.9321     1      223.2231      142.9321      275   35.97%
+Elapsed time = 0.21 sec. (124.88 ticks, tree = 0.02 MB, solutions = 1)
+*     2     1      integral     0      158.7891      142.9321      334    9.99%
+
+Cone linearizations applied:  388
+
+Root node processing (before b&c):
+  Real time             =    0.20 sec. (124.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.05 sec. (132.77 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.25 sec. (257.35 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.5878910559e+02
+Solution time =    0.25 sec.  Iterations = 515  Nodes = 3
+Deterministic time = 257.35 ticks  (1011.15 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.5878910559e+02
+Solution time =    0.00 sec.  Iterations = 515  Nodes = 3
+Deterministic time = 0.00 ticks  (0.59 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.5878910559e+02
+Solution time =    0.00 sec.  Iterations = 515  Nodes = 3
+Deterministic time = 0.00 ticks  (0.29 ticks/sec)
+
+
+Log started (V22.1.0.0) Tue Jul 26 16:59:18 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+
+Log started (V22.1.0.0) Tue Jul 26 16:59:35 2022
+
+No problem exists.
+
+Log started (V22.1.0.0) Tue Jul 26 16:59:41 2022
+
+No problem exists.
+
+Log started (V22.1.0.0) Tue Jul 26 17:00:04 2022
+
+
+Log started (V22.1.0.0) Tue Jul 26 17:00:15 2022
+
+
+Log started (V22.1.0.0) Tue Jul 26 17:00:23 2022
+
+
+Log started (V22.1.0.0) Tue Jul 26 17:00:47 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+
+Log started (V22.1.0.0) Tue Jul 26 17:01:03 2022
+
+No problem exists.
+
+Log started (V22.1.0.0) Tue Jul 26 17:01:13 2022
+
+No problem exists.
+
+Log started (V22.1.0.0) Tue Jul 26 17:01:35 2022
+
+
+Problem 'model.lp' read.
+Read time = 0.01 sec. (0.05 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1 rows and 2 columns.
+MIQCP Presolve modified 423 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIQCP has 285 rows, 213 columns, and 2139 nonzeros.
+Reduced MIQCP has 2 binaries, 0 generals, 0 SOSs, and 76 indicators.
+Reduced MIQCP has 74 quadratic constraints.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 16 threads.
+Root relaxation solution time = 0.00 sec. (1.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -2229.6798     0                                   41         
+      0     0    -1660.7266     1                     Cone: 4       46         
+      0     0    -1534.6784     1                     Cone: 8       59         
+      0     0    -1146.1047     1                    Cone: 12       79         
+      0     0    -1062.5598     1                    Cone: 16       87         
+      0     0     -806.5321     1                    Cone: 20      101         
+      0     0     -771.7539     1                    Cone: 24      108         
+      0     0      142.9314     1                    Cone: 61      181         
+      0     0      142.9317     1                    Cone: 93      203         
+      0     0      142.9319     1                   Cone: 121      218         
+      0     0      142.9320     1                   Cone: 143      238         
+      0     0      142.9320     1                   Cone: 161      251         
+      0     0      142.9321     1                   Cone: 172      257         
+      0     0      142.9321     1                   Cone: 179      264         
+      0     0      142.9321     1                   Cone: 187      270         
+      0     0      142.9321     1                   Cone: 192      272         
+      0     0      142.9321     1                   Cone: 195      273         
+      0     0      142.9321     1                   Cone: 197      274         
+      0     0      142.9321     1                   Cone: 199      275         
+      0     0      142.9321     1                    142.9321      275         
+*     0+    0                          223.2231      142.9321            35.97%
+      0     2      142.9321     1      223.2231      142.9321      275   35.97%
+Elapsed time = 0.19 sec. (124.88 ticks, tree = 0.02 MB, solutions = 1)
+*     2     1      integral     0      158.7891      142.9321      334    9.99%
+
+Cone linearizations applied:  388
+
+Root node processing (before b&c):
+  Real time             =    0.18 sec. (124.59 ticks)
+Parallel b&c, 16 threads:
+  Real time             =    0.06 sec. (132.77 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.24 sec. (257.35 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.5878910559e+02
+Solution time =    0.24 sec.  Iterations = 515  Nodes = 3
+Deterministic time = 257.35 ticks  (1079.37 ticks/sec)
+
+
+Problem 'model.lp' read.
+Read time = 0.00 sec. (0.02 ticks)
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+QCP Presolve eliminated 0 rows and 1 columns.
+Aggregator did 7 substitutions.
+Reduced QCP has 154 rows, 61 columns, and 994 nonzeros.
+Reduced QCP has 18 quadratic constraints.
+Presolve time = 0.00 sec. (0.16 ticks)
+Parallel mode: using up to 16 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8476
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.32 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 16
+  Rows in Factor            = 154
+  Integer space required    = 374
+  Total non-zeros in factor = 9882
+  Total FP ops to factor    = 812960
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   4.6116035e+02   4.5833192e+02  2.67e+02  0.00e+00  6.23e+02  1.00e+00
+   1   4.3124438e+02   4.2860325e+02  2.67e+02  0.00e+00  6.23e+02  8.90e-01
+   2   2.4996195e+02   2.4913092e+02  2.63e+02  0.00e+00  6.13e+02  4.60e-01
+   3   1.2088784e+02   1.2054115e+02  2.10e+02  0.00e+00  4.89e+02  3.80e-01
+   4   1.9386219e+02   1.9368912e+02  2.08e+02  0.00e+00  4.84e+02  3.63e-01
+   5   3.9519221e+01   3.9943542e+01  2.04e+02  0.00e+00  4.76e+02  3.14e-01
+   6   4.5509579e+01   4.5946670e+01  1.93e+02  0.00e+00  4.49e+02  3.17e-01
+   7   8.4542133e+01   8.4916277e+01  1.90e+02  0.00e+00  4.43e+02  3.51e-01
+   8   3.0326796e+01   3.1673776e+01  1.72e+02  0.00e+00  4.02e+02  4.41e-01
+   9   1.3061316e+01   1.3720240e+01  6.43e+01  0.00e+00  1.50e+02  9.08e-01
+  10   2.0757241e+01   2.1541494e+01  3.09e+01  0.00e+00  7.21e+01  8.10e-01
+  11   4.4246745e+01   4.4452698e+01  3.14e+01  0.00e+00  7.32e+01  3.09e+00
+  12   4.7460571e+01   4.7482549e+01  8.19e+00  0.00e+00  1.91e+01  2.99e+01
+  13   4.7953395e+01   4.7956467e+01  7.99e-01  0.00e+00  1.86e+00  2.18e+02
+  14   4.8025267e+01   4.8025561e+01  1.05e-01  0.00e+00  2.46e-01  2.48e+03
+  15   4.8032777e+01   4.8032783e+01  7.66e-03  0.00e+00  1.79e-02  1.22e+05
+  16   4.8032906e+01   4.8032907e+01  1.55e-04  0.00e+00  3.60e-04  4.37e+05
+
+Barrier - Optimal:  Objective =  4.8032933071e+01
+Solution time =    0.02 sec.  Iterations = 16
+Deterministic time = 4.10 ticks  (189.16 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+QCP Presolve eliminated 0 rows and 1 columns.
+Aggregator did 7 substitutions.
+Reduced QCP has 154 rows, 61 columns, and 994 nonzeros.
+Reduced QCP has 18 quadratic constraints.
+Presolve time = 0.00 sec. (0.16 ticks)
+Parallel mode: using up to 16 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8476
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.32 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 16
+  Rows in Factor            = 154
+  Integer space required    = 374
+  Total non-zeros in factor = 9882
+  Total FP ops to factor    = 812960
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   4.6116035e+02   4.5833192e+02  2.67e+02  0.00e+00  6.23e+02  1.00e+00
+   1   4.3124438e+02   4.2860325e+02  2.67e+02  0.00e+00  6.23e+02  8.90e-01
+   2   2.4996195e+02   2.4913092e+02  2.63e+02  0.00e+00  6.13e+02  4.60e-01
+   3   1.2088784e+02   1.2054115e+02  2.10e+02  0.00e+00  4.89e+02  3.80e-01
+   4   1.9386219e+02   1.9368912e+02  2.08e+02  0.00e+00  4.84e+02  3.63e-01
+   5   3.9519221e+01   3.9943542e+01  2.04e+02  0.00e+00  4.76e+02  3.14e-01
+   6   4.5509579e+01   4.5946670e+01  1.93e+02  0.00e+00  4.49e+02  3.17e-01
+   7   8.4542133e+01   8.4916277e+01  1.90e+02  0.00e+00  4.43e+02  3.51e-01
+   8   3.0326796e+01   3.1673776e+01  1.72e+02  0.00e+00  4.02e+02  4.41e-01
+   9   1.3061316e+01   1.3720240e+01  6.43e+01  0.00e+00  1.50e+02  9.08e-01
+  10   2.0757241e+01   2.1541494e+01  3.09e+01  0.00e+00  7.21e+01  8.10e-01
+  11   4.4246745e+01   4.4452698e+01  3.14e+01  0.00e+00  7.32e+01  3.09e+00
+  12   4.7460571e+01   4.7482549e+01  8.19e+00  0.00e+00  1.91e+01  2.99e+01
+  13   4.7953395e+01   4.7956467e+01  7.99e-01  0.00e+00  1.86e+00  2.18e+02
+  14   4.8025267e+01   4.8025561e+01  1.05e-01  0.00e+00  2.46e-01  2.48e+03
+  15   4.8032777e+01   4.8032783e+01  7.66e-03  0.00e+00  1.79e-02  1.22e+05
+  16   4.8032906e+01   4.8032907e+01  1.55e-04  0.00e+00  3.60e-04  4.37e+05
+
+Barrier - Optimal:  Objective =  4.8032933071e+01
+Solution time =    0.01 sec.  Iterations = 16
+Deterministic time = 4.10 ticks  (295.19 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+QCP Presolve eliminated 0 rows and 1 columns.
+Aggregator did 7 substitutions.
+Reduced QCP has 154 rows, 61 columns, and 994 nonzeros.
+Reduced QCP has 18 quadratic constraints.
+Presolve time = 0.00 sec. (0.16 ticks)
+Parallel mode: using up to 16 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8476
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.32 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 16
+  Rows in Factor            = 154
+  Integer space required    = 374
+  Total non-zeros in factor = 9882
+  Total FP ops to factor    = 812960
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   4.6116035e+02   4.5833192e+02  2.67e+02  0.00e+00  6.23e+02  1.00e+00
+   1   4.3124438e+02   4.2860325e+02  2.67e+02  0.00e+00  6.23e+02  8.90e-01
+   2   2.4996195e+02   2.4913092e+02  2.63e+02  0.00e+00  6.13e+02  4.60e-01
+   3   1.2088784e+02   1.2054115e+02  2.10e+02  0.00e+00  4.89e+02  3.80e-01
+   4   1.9386219e+02   1.9368912e+02  2.08e+02  0.00e+00  4.84e+02  3.63e-01
+   5   3.9519221e+01   3.9943542e+01  2.04e+02  0.00e+00  4.76e+02  3.14e-01
+   6   4.5509579e+01   4.5946670e+01  1.93e+02  0.00e+00  4.49e+02  3.17e-01
+   7   8.4542133e+01   8.4916277e+01  1.90e+02  0.00e+00  4.43e+02  3.51e-01
+   8   3.0326796e+01   3.1673776e+01  1.72e+02  0.00e+00  4.02e+02  4.41e-01
+   9   1.3061316e+01   1.3720240e+01  6.43e+01  0.00e+00  1.50e+02  9.08e-01
+  10   2.0757241e+01   2.1541494e+01  3.09e+01  0.00e+00  7.21e+01  8.10e-01
+  11   4.4246745e+01   4.4452698e+01  3.14e+01  0.00e+00  7.32e+01  3.09e+00
+  12   4.7460571e+01   4.7482549e+01  8.19e+00  0.00e+00  1.91e+01  2.99e+01
+  13   4.7953395e+01   4.7956467e+01  7.99e-01  0.00e+00  1.86e+00  2.18e+02
+  14   4.8025267e+01   4.8025561e+01  1.05e-01  0.00e+00  2.46e-01  2.48e+03
+  15   4.8032777e+01   4.8032783e+01  7.66e-03  0.00e+00  1.79e-02  1.22e+05
+  16   4.8032906e+01   4.8032907e+01  1.55e-04  0.00e+00  3.60e-04  4.37e+05
+
+Barrier - Optimal:  Objective =  4.8032933071e+01
+Solution time =    0.02 sec.  Iterations = 16
+Deterministic time = 4.10 ticks  (211.11 ticks/sec)
+
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+Tried aggregator 1 time.
+QCP Presolve eliminated 0 rows and 1 columns.
+Aggregator did 7 substitutions.
+Reduced QCP has 154 rows, 61 columns, and 994 nonzeros.
+Reduced QCP has 18 quadratic constraints.
+Presolve time = 0.00 sec. (0.16 ticks)
+Parallel mode: using up to 16 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8476
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.32 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 16
+  Rows in Factor            = 154
+  Integer space required    = 374
+  Total non-zeros in factor = 9882
+  Total FP ops to factor    = 812960
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   4.6116035e+02   4.5833192e+02  2.67e+02  0.00e+00  6.23e+02  1.00e+00
+   1   4.3124438e+02   4.2860325e+02  2.67e+02  0.00e+00  6.23e+02  8.90e-01
+   2   2.4996195e+02   2.4913092e+02  2.63e+02  0.00e+00  6.13e+02  4.60e-01
+   3   1.2088784e+02   1.2054115e+02  2.10e+02  0.00e+00  4.89e+02  3.80e-01
+   4   1.9386219e+02   1.9368912e+02  2.08e+02  0.00e+00  4.84e+02  3.63e-01
+   5   3.9519221e+01   3.9943542e+01  2.04e+02  0.00e+00  4.76e+02  3.14e-01
+   6   4.5509579e+01   4.5946670e+01  1.93e+02  0.00e+00  4.49e+02  3.17e-01
+   7   8.4542133e+01   8.4916277e+01  1.90e+02  0.00e+00  4.43e+02  3.51e-01
+   8   3.0326796e+01   3.1673776e+01  1.72e+02  0.00e+00  4.02e+02  4.41e-01
+   9   1.3061316e+01   1.3720240e+01  6.43e+01  0.00e+00  1.50e+02  9.08e-01
+  10   2.0757241e+01   2.1541494e+01  3.09e+01  0.00e+00  7.21e+01  8.10e-01
+  11   4.4246745e+01   4.4452698e+01  3.14e+01  0.00e+00  7.32e+01  3.09e+00
+  12   4.7460571e+01   4.7482549e+01  8.19e+00  0.00e+00  1.91e+01  2.99e+01
+  13   4.7953395e+01   4.7956467e+01  7.99e-01  0.00e+00  1.86e+00  2.18e+02
+  14   4.8025267e+01   4.8025561e+01  1.05e-01  0.00e+00  2.46e-01  2.48e+03
+  15   4.8032777e+01   4.8032783e+01  7.66e-03  0.00e+00  1.79e-02  1.22e+05
+  16   4.8032906e+01   4.8032907e+01  1.55e-04  0.00e+00  3.60e-04  4.37e+05
+
+Barrier - Optimal:  Objective =  4.8032933071e+01
+Solution time =    0.01 sec.  Iterations = 16
+Deterministic time = 4.10 ticks  (392.29 ticks/sec)
+
